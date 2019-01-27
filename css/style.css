@@ -1,0 +1,416 @@
+body {
+  font-family:'Open Sans', sans-serif;
+  margin: 0;
+}
+h1,h2 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration:none;
+}
+img{
+  max-width: 100%;
+}
+p {
+  margin: 0;
+}
+.menu {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.container {
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.menu-logo {
+  display:flex;
+  align-items:center;
+}
+.avatar {
+  width:57px;
+  height:57px;
+  background:url('https://pp.userapi.com/c639728/v639728818/260dc/jsNI9cl6fvc.jpg');
+  background-size:150%;
+  border-radius:50%;
+  background-repeat:no-repeat
+}
+.description {
+  margin-left:9px;
+}
+.name {
+  display:block;
+  font-siaze:16px;
+  font-weight:800;
+  color:#2b2a2c;
+}
+.description-small {
+  font-size:12px;
+  color:#6a696b;
+}
+.menu-nav a {
+  font-size:14px;
+  position:relative;
+  margin-right:38px;
+  text-decoration:none;
+  color:#2b2a2c;
+  text-transform:uppercase;
+  font-weight:800;
+  transiton:1s;
+}
+nav a:after{
+  content:'';
+  height:2px;
+  width:0;
+  position:absolute;
+  top:100%;
+  left:50%;
+  background:#ffdd40;
+  transition: .2s;
+}
+nav a:hover:after {
+  width:100%;
+  left:0;
+}
+.menu-nav button {
+  color:#2b2a2c;
+  font-size:14px;
+  line-height: 16.84px;
+  text-transform:uppercase;
+  font-weight:800;
+  background:transparent;
+  border-radius:50px;
+  border: 2px solid #2b2a2c;
+  padding:13px 22px;
+  transition:.2s;
+}
+.menu-nav button:hover {
+  background:black;
+  color:white;
+}
+.hero  {
+  background: url('https://pngs.ru/public/uploads/preview/muzhchina-v-polnyy-rost-png-11506669216quoeqrbtbf.png')  no-repeat  right bottom;
+  background-size: contain;
+  padding-bottom: 124px;
+  padding-top: 112px;
+  margin-bottom: 91px;
+}
+.hero-subtitle {
+  font-size:32px;
+  color: #2b2a2c;
+  line-height: 15px;
+}
+.hero-title {
+  font-size: 45px;
+  line-height: 48px;
+  margin: 8px 0;
+}
+.hero-description {
+  font-size: 18px;
+  line-height: 15px;
+  color: #6a696b;
+  margin-bottom: 26px;
+}
+.hero-social {
+  margin-bottom: 42px;
+}
+.social {
+  display:inline-block;
+  width:41px;
+  height: 41px;
+  text-align:center;
+  line-height: 41px;
+  color: #ffffff;
+  margin-right: 8px;
+}
+.social-be {
+  background-color: #1869ff;
+}
+.social-f {
+  background-color: #3a5898;
+}
+.social-i {
+  background-color: #13578a;
+}
+.social-vk {
+  background-color: #56acef;
+}
+.hero-btn {
+  display:flex;
+  align-content:center;
+}
+.hero-btn a {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  background-color: #2b2a2c;
+  font-weight: 800;
+  border-radius: 50px;
+}
+.write-me {
+  padding: 19px 34px 20px 34px;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-right: 17px;
+}
+.write-me:hover {
+  background-color: #6a696b;
+  color:black;
+}
+.btn.my-resume {
+  color: #6a696b;
+  background: #ffffff;
+  padding: 20px 45px 15px 45px;
+  border: 1px solid #6a696b;
+}
+.btn.my-resume:hover {
+  color:white;
+  background-color: #6a696b;
+}
+.project-cards {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+.project-card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  width:32%;
+  min-height: 370px;
+}
+.project-image {
+  height:300px;
+}
+.project-info {
+  padding: 19px 20px 15px 13px;
+}
+.project-title {
+  display:flex;
+  justify-content: space-between;
+  
+}
+.pr-img-1 {
+  background:url('https://wmpics.pics/di-SEDQZX0S.jpg') no-repeat 35%;
+  background-size:150%;
+}
+.pr-img-2 {
+  background:url('https://images-eu.ssl-images-amazon.com/images/I/31KluT5nBkL.png') no-repeat center;
+  background-size:100%;
+}
+.pr-img-3 {
+  background:url('https://www.youtube.com/yts/img/yt_1200-vfl4C3T0K.png') no-repeat center;
+  background-size:100%;
+}
+.pr-img-4 {
+  background:url('https://cdn-images-1.medium.com/max/1200/1*JpEvZD1Wfo5GvUzdTWsJzQ.png') no-repeat center;
+  background-size:100%;
+}
+.pr-img-5 {
+  background:url('https://pbs.twimg.com/profile_images/753869271709655044/2w2__8nd_400x400.jpg') no-repeat center;
+  background-size:100%;
+}
+.pr-img-6 {
+  background:url('https://lh3.googleusercontent.com/OSg9432KbOpaBDM93rVpGiMFAbE-QlKT52BfbJCshYlgpKrFwil-TMKtrVZqIJq-2G4') no-repeat center;
+  background-size:100%;
+}
+.pr-img-7 {
+  background:url('https://github.githubassets.com/images/modules/open_graph/github-logo.png') no-repeat center;
+  background-size:100%;
+}
+.pr-img-8 {
+  background:url('https://cs8.pikabu.ru/post_img/2016/08/26/4/1472188580133141207.jpg') no-repeat center;
+  background-size:100%;
+}
+.pr-img-9 {
+  background:url('https://habrastorage.org/storage2/7ac/0d8/26a/7ac0d826a596f4388cb537f04617fcfd.png') no-repeat center;
+  background-size:100%;
+}
+.card-category {
+  color: #2b2a2c;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.6px;
+  margin-bottom: 13px;
+}
+.project-title .name {
+  font-size: 16px;
+  color: #2b2a2c;
+  font-weight: 800;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.project-title .date {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+.about-me {
+  display:flex;
+}
+.about-me > div {
+  width:50%;
+}
+.my-photo {
+  background: url('https://pngs.ru/public/uploads/preview/muzhchina-v-polnyy-rost-png-11506669216quoeqrbtbf.png') no-repeat center;
+  background-size: 140%;
+}
+.info-about-me {
+  padding: 131px 0 62px 0;
+  display: flex;
+  flex-direction:column;
+}
+.info-about-me h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height:45px;
+  margin-bottom: 42px;
+}
+.info-about-me p {
+  color: #717072;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 53px;
+}
+footer {
+  background-color: #2b2a2c;
+  margin-top: 105px;
+}
+.container-footer {
+  display:flex;
+  justify-content:space-between;
+  padding: 13px 0 17px;
+}
+footer a {
+  color: #8d8d8e;
+}
+.footer-left {
+  display:flex;
+  align-items:center;
+}
+.footer-right {
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+}
+.copyright {
+  font-size: 14px;
+  color: #8d8d8e;
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right:1px solid #413f41;
+}
+.footer-social a {
+  font-size: 20px;
+  margin-right: 13px;
+}
+.footer-right a {
+  font-size: 14px;
+}
+.footer-nav a{
+  margin-right: 30px;
+  position:relative;
+}
+.footer-btn {
+  padding: 11px 23px;
+  border: 1px solid #8d8d8e;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.footer-btn:hover {
+  color:black;
+  background-color: #8d8d8e;
+}
+
+@media (max-width:1200px) {
+  .project-card {
+    width:48%;
+  }
+  .project-cards {
+    justify-content:space-around;
+    margin-bottom: 50px;
+  }
+  .container-footer {
+    padding:13px 10px 17px;
+  }
+}
+@media (max-width:992px) {
+  .project-cards {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width:768px) {
+  .name {
+    font-size:14px;
+  }
+  .description-small {
+    font-size:11px;
+  }
+  .menu-nav a {
+    font-size:13px;
+  }
+  .menu-nav button {
+    font-size:13px;
+    padding:10px 20px;
+  }
+  .hero {
+    padding-top:30px;
+    padding-bottom: 600px;
+  }
+  .pr-img-9 {
+    background-size: contain;
+  }
+  .project-cards {
+    justify-content:center;
+  }
+  .project-card {
+    width:98%;
+  }
+  .my-photo {
+    width:100%;
+    min-height:400px;
+    background-size: contain;
+  }
+  .about-me {
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .info-about-me {
+    padding: 10px 0;
+  }
+  .about-me div {
+    width:100%;
+  }
+  .info-about-me .hero-btn {
+    display:flex;
+    justify-content:center;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  .copyright {
+    padding-right: 10px;
+    font-size:12px;
+  }
+  .footer-social a {
+    font-size:14px;
+  }
+  .footer-nav a {
+    font-size:12px;
+    margin-right: 20px;
+  }
+  .footer-btn {
+    font-size:10px;
+    padding: 5px 15px;
+  }
+}

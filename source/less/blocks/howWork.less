@@ -1,0 +1,165 @@
+.how-work__title {
+  .zero;
+  margin-bottom: 30px;
+
+  .setFont(36px; 60px;);
+  line-height: 60px;
+}
+
+.how-work__list {
+  .zero;
+  list-style-type: none;
+}
+
+
+.how-work__item {
+  position: relative;
+
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: @text-color;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @main-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.how-work--leaf {
+  &::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+}
+
+.how-work--water {
+  &::after {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.how-work--cutlery {
+  &::after {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.how-work--clock {
+  &::after {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.how-work__item:last-child {
+  margin-bottom: 42px;
+}
+
+@media (min-width: 768px) {
+  .how-work {
+    border-bottom: 1px solid @border-color;
+  }
+
+  .how-work__title {
+    .setFont(size; 60px; 60px;);
+    margin-bottom: 70px;
+  }
+
+  .how-work__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-work__item {
+    width: 210px;
+    padding-left: 0;
+    padding-top: 115px;
+    padding-bottom: 60px;
+    margin-bottom: 85px;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .how-work__item:nth-child(2n - 1) {
+    margin-right: 174px;
+  }
+
+  .how-work__item:nth-child(1) {
+    &::before {
+      content: "1";
+      position: absolute;
+      top: -40px;
+      right: -10px;
+
+      .setFont(281px; 281px; "Oswald"; @grey-color);
+
+      z-index: -1;
+    }
+  }
+
+  .how-work__item:nth-child(2) {
+    &::before {
+      content: "2";
+      position: absolute;
+      top: -40px;
+      right: -20px;
+
+      .setFont(281px; 281px; "Oswald"; @grey-color);
+
+      z-index: -1;
+    }
+  }
+
+  .how-work__item:nth-child(3) {
+    &::before {
+      content: "3";
+      position: absolute;
+      top: -40px;
+      right: -20px;
+
+      .setFont(281px; 281px; "Oswald"; @grey-color);
+
+      z-index: -1;
+    }
+  }
+
+  .how-work__item:nth-child(4) {
+    &::before {
+      content: "4";
+      position: absolute;
+      top: -40px;
+      right: 0;
+
+      .setFont(281px; 281px; "Oswald"; @grey-color);
+
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .how-work {
+    border-bottom: none;
+  }
+
+  .how-work .how-work__item {
+    margin: 0;
+  }
+
+  .how-work__list {
+    justify-content: space-between;
+  }
+}

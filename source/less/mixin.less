@@ -1,0 +1,31 @@
+.zero () {
+  margin: 0;
+  padding: 0;
+}
+
+.after(@url; @width:50px; @height:50px;) {
+  content: "";
+  position: absolute;
+  width: @width;
+  height: @height;
+  background: url(@url) no-repeat;
+}
+
+.setFont(@size; @line; @family:"Oswald"; @color:@main-text-color;) {
+  font-size: @size;
+  line-height: @line;
+  color: @color;
+  font-family: @family, sans-serif;
+  font-weight: 400;
+}
+
+.setFont(size; @size; @line;) {
+  font-size: @size;
+  line-height: @line;
+}
+
+.indentText() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}

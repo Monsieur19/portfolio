@@ -1,9 +1,13 @@
+.head {
+  border-bottom: 1px solid @border-color;
+}
+
 .head__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 11px 0 12px 0;
 }
 
 .head__logo-img-tablet {
@@ -34,20 +38,34 @@
   display: block;
 }
 
+.head__btn-open-menu:active,
+.head__btn-open-menu:focus {
+  background: url("../img/icon-close.svg") no-repeat;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   .zero();
+  margin-bottom: -11px;
   list-style-type: none;
 }
 
 .main-nav__item {
   width: 100%;
+
+  &:last-child a {
+    &::after {
+      border: none;
+    }
+  }
 }
 
 .main-nav__item a {
+  position: relative;
+
   display: block;
   width: 100%;
   padding: 26px 0 24px 0;
@@ -61,14 +79,32 @@
   text-decoration: none;
   text-align: center;
 
-  border-bottom: 1px solid #e6e6e6;
-}
+    &:not(.current-page):hover {
+      color: purple;
+    }
 
-.current-page {
-  border-bottom: 2px solid @main-color;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    width: 200vw;
+    height: 100%;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: 768px) {
+  .head {
+    border: none;
+  }
+
+  .head__logo {
+    padding-top: 5px;
+  }
+
   .head__logo-img-mobile {
     display: none;
   }
@@ -84,6 +120,7 @@
   .main-nav {
     display: block;
     width: 440px;
+    padding: 23px 0;
   }
 
   .main-nav__list {
@@ -105,14 +142,34 @@
     .setFont(18px; 24px; "Oswald";);
 
     border: none;
+
+    &::after {
+      display: none;
+    }
   }
 
   .main-nav__item .current-page {
     border-bottom: 2px solid @main-color;
   }
+
+  .current-page {
+    border-bottom: 2px solid @main-color;
+  }
 }
 
 @media (min-width: 1300px) {
+  .head__wrapper {
+    padding-top: 42px;
+  }
+
+  .main-nav {
+    width: 478px;
+  }
+
+  .main-nav__item a {
+    .setFont(size; 20px; 24px;);
+  }
+
   .head__logo-img-tablet {
     display: none;
   }
@@ -121,11 +178,11 @@
     display: block;
   }
 
-  .main-nav__item a {
+  .main-nav--index a {
     color: #ffffff;
   }
 
-  .main-nav__item .current-page {
+  .main-nav--index .current-page {
     border-color: #ffffff;
   }
 }

@@ -9,16 +9,18 @@
 }
 
 .foot__logo {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .foot__list-link {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   .zero;
-  padding: 15px 0;
-  margin-bottom: 20px;
+  padding: 17px 79px 17px 68px;
+  margin-bottom: 18px;
 
   border: 1px solid @border-color;
   list-style-type: none;
@@ -37,17 +39,16 @@
 .foot__link--vk {
   width: 30px;
   height: 16px;
-  margin-right: 30px;
 
   background-image: url("../img/icon-vk-mobile.svg");
-  background-size: 70%;
+  background-size: 75%;
   background-position: center center;
 }
 
 .foot__link--instagram {
   width: 23px;
   height: 23px;
-  margin-right: 30px;
+  margin-right: 2px;
 
   background-image: url("../img/icon-insta-mobile.svg");
   background-size: 70%;
@@ -79,8 +80,8 @@
 
 .foot__htmlacademy-logo {
   display: block;
-  width: 27px;
-  height: 34px;
+  width: 34px;
+  height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -88,7 +89,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 58px 0;
+    padding: 57px 0;
   }
 
   .foot__logo {
@@ -97,7 +98,10 @@
   }
 
   .foot__list-link {
+    width: 140px;
     .zero;
+    padding-left: 16px;
+    margin-top: -1px;
 
     border: none;
   }
@@ -105,7 +109,6 @@
   .foot__link--vk {
     width: 30px;
     height: 16px;
-    margin-right: 30px;
 
     background-image: url("../img/icon-vk.svg");
     background-size: 100%;
@@ -115,7 +118,6 @@
   .foot__link--instagram {
     width: 23px;
     height: 23px;
-    margin-right: 30px;
 
     background-image: url("../img/icon-insta.svg");
     background-size: 100%;
@@ -135,6 +137,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 162px;
+    width: 164px;
   }
 }

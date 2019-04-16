@@ -1,7 +1,16 @@
+.address {
+  margin-bottom: 5px;
+}
+
 .address__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 25px 0;
+  padding-top: 29px;
+  padding-bottom: 25px;
+}
+
+.address--grey {
+  background: @grey-color;
 }
 
 .address__wrapper b {
@@ -23,12 +32,21 @@
 
 .address__map {
   position: relative;
-  width: 320px;
 
+  width: 320px;
+  height: 362px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: -5px;
-  z-index: -1;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+.address__map img {
+  position: absolute;
+  top: -38px;
+  left: 0;
 }
 
 .address__mark {
@@ -54,7 +72,7 @@
 
 @media (min-width: 768px) {
   .address__wrapper {
-    padding: 60px 42px 55px 41px;
+    padding: 64px 42px 55px 41px;
   }
 
   .address__wrapper b {
@@ -85,11 +103,16 @@
 
   .address__map {
     width: 768px;
+    height: 396px;
+  }
+
+  .address__map img {
+    top: -3px;
   }
 
   .address__mark {
-    top: 145px;
-    left: 333px;
+    top: 150px;
+    left: 322px;
   }
 
   .address__mark-small {
@@ -115,6 +138,8 @@
     height: 201px;
 
     background: #ffffff;
+
+    z-index: 2;
   }
 
   .address__map {

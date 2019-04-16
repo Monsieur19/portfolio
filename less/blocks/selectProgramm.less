@@ -1,0 +1,604 @@
+.select-programm__title {
+  .zero;
+  padding: 17px 0 24px 0;
+
+  .setFont(36px; 60px;);
+}
+
+.select-programm__profile {
+  width: 230px;
+  .zero;
+  margin-bottom: 38px;
+
+  .setFont(14px; 18px;);
+  text-transform: uppercase;
+}
+
+.form__field {
+  display: flex;
+  .zero;
+
+  border: none;
+}
+
+.form legend {
+  position: relative;
+
+  .zero;
+
+  .setFont(24px; 24px;);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 100%;
+
+    width: 100vw;
+    height: 3px;
+
+    background: @main-color;
+  }
+}
+
+.form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .setFont(16px; 18px; "Oswald"; #222222);
+  text-transform: uppercase;
+}
+
+.form input {
+  padding: 13px 0 14px 15px;
+
+  .setFont(16px; 18px; "Oswald"; @text-color);
+  text-transform: uppercase;
+
+  border: 1px solid @border-color;
+}
+
+.form__field--main-info {
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form__field--main-info label {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__name input {
+  width: 229px;
+}
+
+.form__weight input {
+  width: 204px;
+}
+
+.form__age input {
+  width: 172px;
+}
+
+.form__field--purpose {
+  position: relative;
+
+  flex-direction: column;
+  padding: 27px 0 25px 0;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+
+    width: 200vw;
+    height: 100%;
+
+    border: 1px solid @border-color;
+  }
+}
+
+.form__field--purpose input {
+  display: none;
+}
+
+.form__weight-less:checked ~ .form__purpose-weight-less::after {
+  display: block;
+}
+
+.form__weight-gain:checked ~ .form__purpose-weight-gain::after {
+  display: block;
+}
+
+.form__help:checked ~ .form__purpose-help::after {
+  display: block;
+}
+
+.form__field--purpose label {
+  position: relative;
+
+  padding-left: 46px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid @border-color;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    display: none;
+    width: 12px;
+    height: 12px;
+
+    background: @main-color;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+}
+
+.form__field--contact-data {
+  margin-bottom: 15px;
+}
+
+.form__field--contact-data legend {
+  width: 200px;
+  margin-bottom: 33px;
+}
+
+.form__contact-data-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form__contact-data-container input {
+  padding-right: 35px;
+}
+
+.form__email input {
+  width: 219px;
+
+  border: 1px solid @border-color;
+
+  background: url("../img/icon-mail.svg") no-repeat 93% center;
+  background-size: 8%;
+}
+
+.form__phone input {
+  width: 204px;
+
+  background: url("../img/icon-phone.svg") no-repeat 94% center;
+  background-size: 10%;
+}
+
+.form__field--comment {
+  margin-bottom: 28px;
+}
+
+.form__field--comment legend {
+  width: 142px;
+  margin-bottom: 36px;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 11px 13px 11px 14px;
+
+  .setFont(16px; 18px; "Oswald"; @text-color;);
+}
+
+.form-extra-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__extra-container input {
+  display: none;
+}
+
+.form__field--extra {
+  margin-bottom: 15px;
+}
+
+.form__field--extra legend {
+  width: 164px;
+  margin-bottom: 39px;
+}
+
+.form__extra-container label {
+  position: relative;
+
+  display: block;
+  padding-left: 46px;
+  margin-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+
+    border: 1px solid  @border-color;
+  }
+}
+
+.form__sweetener:checked ~ .form__extra-sweetener::after {
+  background: url("../img/icon-tick.svg") no-repeat  center center;
+  background-size: 80%;
+}
+
+.form__water:checked ~ .form__extra-water::after {
+  background: url("../img/icon-tick.svg") no-repeat  center center;
+  background-size: 80%;
+}
+
+.form__milk:checked ~ .form__extra-milk::after {
+  background: url("../img/icon-tick.svg") no-repeat  center center;
+  background-size: 80%;
+}
+
+.form__vitamins:checked ~ .form__extra-vitamins::after {
+  background: url("../img/icon-tick.svg") no-repeat  center center;
+  background-size: 80%;
+}
+
+.form__btn-send-request {
+  padding: 9px 0 10px 0;
+  .setFont(16px; 20px; "Oswald"; #ffffff;);
+
+  border: none;
+}
+
+.primary-field {
+  .zero;
+  padding: 22px 55px 31px 63px;
+
+  .setFont(14px; 16px; "Arial"; @text-color;);
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 0 37px 0 40px;
+  }
+
+  .select-programm__title {
+    padding-top: 42px;
+    margin-bottom: 30px;
+
+    .setFont(60px; 60px;);
+  }
+
+  .select-programm__profile {
+    width: 365px;
+    padding-left: 40px;
+    margin-bottom: 67px;
+
+    .setFont(20px; 30px;);
+    text-transform: uppercase;
+  }
+
+  .form legend {
+    .setFont(36px; 36px;);
+
+    &::after {
+      top: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -104vw;
+
+      width: 100vw;
+      height: 3px;
+
+      background: @main-color;
+    }
+  }
+
+  .form label {
+    .setFont(20px; 20px;);
+  }
+
+  .form input {
+    padding: 10px 19px;
+
+    .setFont(20px; 20px; "Oswald"; @text-color;);
+  }
+
+  .form__field--main-info {
+    margin-bottom: 74px;
+  }
+
+  .form__field--main-info label {
+    margin-bottom: 20px;
+  }
+
+  .form__name input {
+    width: 567px;
+  }
+
+  .form__weight input {
+    width: 536px;
+  }
+
+  .form__age input {
+    width: 497px;
+  }
+
+  .form__field--purpose {
+    width: 630px;
+    padding: 33px 27px;
+    margin-bottom: 76px;
+
+    border: 1px solid @border-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__field--purpose label {
+    padding-left: 60px;
+    margin-bottom: 33px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      left: 12px;
+
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .form__field--contact-data {
+    margin-bottom: 45px;
+  }
+
+  .form__field--contact-data legend {
+    width: 552px;
+    margin-bottom: 75px;
+  }
+
+  .form__field--contact-data label {
+    margin-bottom: 20px;
+  }
+
+  .form__email input {
+    width: 551px;
+    padding-left: 23px;
+
+    background-size: 4%;
+  }
+
+  .form__phone input {
+    width: 535px;
+    padding-left: 20px;
+
+    background-size: 4%;
+  }
+
+  .form__field--comment {
+    margin-bottom: 66px;
+  }
+
+  .form__field--comment legend {
+    width: 218px;
+    margin-bottom: 75px;
+  }
+
+  .form__textarea {
+    min-height: 174px;
+    padding: 10px 18px;
+
+    .setFont(size; 20px; 30px;);
+  }
+
+  .form__field--extra {
+    margin-bottom: 11px;
+  }
+
+  .form__extra-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .form__field--extra legend {
+    width: 253px;
+    margin-bottom: 67px;
+  }
+
+  .form__extra-container label {
+    width: 287px;
+    padding-left: 59px;
+    margin-bottom: 52px;
+
+    &::after {
+      top: -10px;
+
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .form__sweetener:checked ~ .form__extra-sweetener::after {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 60%;
+  }
+
+  .form__water:checked ~ .form__extra-water::after {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 60%;
+  }
+
+  .form__milk:checked ~ .form__extra-milk::after {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 60%;
+  }
+
+  .form__vitamins:checked ~ .form__extra-vitamins::after {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 60%;
+  }
+
+  .form__container-send-request {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .form__btn-send-request {
+    width: 283px;
+    padding: 17px;
+
+    .setFont(20px; 20px; "Oswald"; #ffffff;);
+  }
+
+  .primary-field {
+    .zero;
+    padding-left: 62px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+
+    .setFont(16px; 16px; "Arial"; @text-color;);
+  }
+}
+
+@media (min-width: 1300px) {
+  .select-programm {
+    margin-bottom: 15px;
+  }
+
+  .select-programm__title {
+    padding-top: 58px;
+    margin-bottom: 31px;
+  }
+
+  .select-programm__profile {
+    padding-left: 0;
+    margin-bottom: 66px;
+  }
+
+  .form {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form__field legend {
+    &::before {
+      left: -102.4vw;
+    }
+  }
+
+  .form__field {
+    width: 100%;
+  }
+
+  .form__field--main-info {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .form__field--purpose {
+    width: 570px;
+    padding-bottom: 36px;
+    margin-bottom: 68px;
+  }
+
+  .form__name input {
+    width: 507px;
+  }
+
+  .form__weight input {
+    width: 475px;
+  }
+
+  .form__age input {
+    width: 436px;
+  }
+
+  .form__field--contact-data {
+    margin-bottom: 48px;
+  }
+
+  .form__contact-data-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__email input {
+    width: 488px;
+    padding-left: 21px;
+    margin-left: 20px;
+  }
+
+  .form__phone input {
+    width: 472px;
+    padding-left: 18px;
+    margin-left: 20px;
+  }
+
+  .form__field--comment {
+    margin-bottom: 68px;
+  }
+
+  .form__extra-container {
+    flex-wrap: nowrap;
+  }
+
+  .form__extra-container label {
+    width: 325px;
+    margin-bottom: 60px;
+  }
+
+  .form__btn-send-request {
+    width: 570px;
+    padding-top: 15px;
+  }
+
+  .primary-field {
+    padding-left: 81px;
+  }
+}

@@ -1,6 +1,10 @@
+.how-work {
+  padding-bottom: 5px;
+}
+
 .how-work__title {
   .zero;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   .setFont(36px; 60px;);
   line-height: 60px;
@@ -16,7 +20,7 @@
   position: relative;
 
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   font-size: 14px;
   line-height: 18px;
@@ -72,7 +76,7 @@
 
   .how-work__title {
     .setFont(size; 60px; 60px;);
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .how-work__list {
@@ -81,11 +85,12 @@
   }
 
   .how-work__item {
-    width: 210px;
+    width: 250px;
     padding-left: 0;
-    padding-top: 115px;
-    padding-bottom: 60px;
-    margin-bottom: 85px;
+    padding-top: 112px;
+    padding-bottom: 54px;
+
+    .setFont(size; 16px; 24px;);
 
     &::after {
       width: 80px;
@@ -93,16 +98,22 @@
     }
   }
 
+  .how-work--clock {
+    white-space: pre;
+  }
+
   .how-work__item:nth-child(2n - 1) {
-    margin-right: 174px;
+    margin-right: 134px;
   }
 
   .how-work__item:nth-child(1) {
+    margin-bottom: 80px;
+
     &::before {
       content: "1";
       position: absolute;
       top: -40px;
-      right: -10px;
+      right: 21px;
 
       .setFont(281px; 281px; "Oswald"; @grey-color);
 
@@ -115,7 +126,7 @@
       content: "2";
       position: absolute;
       top: -40px;
-      right: -20px;
+      right: 5px;
 
       .setFont(281px; 281px; "Oswald"; @grey-color);
 
@@ -127,8 +138,8 @@
     &::before {
       content: "3";
       position: absolute;
-      top: -40px;
-      right: -20px;
+      top: -39px;
+      right: 3px;
 
       .setFont(281px; 281px; "Oswald"; @grey-color);
 
@@ -152,7 +163,13 @@
 
 @media (min-width: 1300px) {
   .how-work {
+    padding-bottom: 0;
+
     border-bottom: none;
+  }
+
+  .how-work__item {
+    width: 247px;
   }
 
   .how-work .how-work__item {

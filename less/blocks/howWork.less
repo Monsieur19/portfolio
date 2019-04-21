@@ -69,6 +69,33 @@
   margin-bottom: 42px;
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .how-work--leaf {
+    &::after {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+
+  .how-work--water {
+    &::after {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+
+  .how-work--cutlery {
+    &::after {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+
+  .how-work--clock {
+    &::after {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .how-work {
     border-bottom: 1px solid @border-color;

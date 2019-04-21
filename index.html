@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
+    <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,9 +11,11 @@
       <div class="head__wrapper wrapper">
         <div class="head__logo">
           <a class="head__logo-img">
-            <img class="head__logo-img-mobile" src="img/logo-mobile.svg" width="191" height="38">
-            <img class="head__logo-img-tablet" src="img/logo-tablet.svg" width="173" height="58">
-            <img class="head__logo-img-desktop" src="img/logo-desktop.svg" width="202" height="59">
+            <picture>
+              <source media="(min-width:1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="191" height="38" alt="Лого">
+            </picture>
           </a>
         </div>
         <button class="head__btn-open-menu"></button>
@@ -97,14 +99,18 @@
             <input class="slider__become-input" type="radio" name="was-become" id="become-input">
             <div class="slider__img">
               <div class="slider__container-left-cat">
-                <img class="slider__img--left-cat left-cat--mobile" src="img/before-mobile@1x.png" width="320" height="240">
-                <img class="slider__img--left-cat left-cat--tablet" src="img/before-tablet@1x.png" width="690" height="517">
-                <img class="slider__img--left-cat left-cat--desktop" src="img/before-desktop@1x.png" width="690" height="517">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="slider__img--left-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png, img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до">
+                </picture>
               </div>
               <div class="slider__container-right-cat">
-                <img class="slider__img--right-cat right-cat--mobile" src="img/after-mobile@1x.png" width="320" height="240">
-                <img class="slider__img--right-cat right-cat--tablet" src="img/after-tablet@1x.png" width="690" height="517">
-                <img class="slider__img--right-cat right-cat--desktop" src="img/after-desktop@1x.png" width="690" height="517">
+                <picture>
+                  <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="slider__img--right-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png, img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после">
+                </picture>
               </div>
             </div>
             <label class="slider__was" for="was-input">Было</label>
@@ -116,26 +122,26 @@
       </section>
 
       <section class="address">
+        <h2 class="hidden">Адрес компании</h2>
         <div class="address__wrapper wrapper">
           <b>Приглашаем<br> к сотрудничеству дилеров!</b>
           <p>ул. Большая Конюшенная, д. 19/8
             <span class="address__city">Санкт-Петербург</span></p>
         </div>
         <div class="address__map">
-          <img class="address__map-mobile" src="img/bg-map-mobile@1x.png" width="320" height="400">
-          <img class="address__map-tablet" src="img/bg-map-tablet@1x.png" width="767" height="400">
-          <img class="address__map-desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400">
-          <div class="address__mark">
-            <img class="address__mark-small" src="img/map-pin.png" width="62" height="53">
-            <img class="address__mark-big" src="img/map-pin.png" width="124" height="106">
-          </div>
+          <picture>
+            <source media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+            <img class="address__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png, img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта">
+          </picture>
+          <img class="address__mark-img" src="img/map-pin.png" width="62" height="53" alt="Метка">
         </div>
       </section>
     </main>
 
     <footer class="foot">
       <div class="foot__wrapper wrapper">
-        <a href="#" class="foot__logo"><img src="img/logo-footer.svg" width="128" height="24"></a>
+        <a href="#" class="foot__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="logo"></a>
         <ul class="foot__list-link">
           <li class="foot__item-link">
             <a class="foot__link foot__link--vk" href="#">vk</a>
@@ -148,8 +154,8 @@
           </li>
         </ul>
         <div class="foot__htmlacademy">
-          <a class="foot__htmlacademy-text" href="https://htmlacademy.ru">HTML Academy</a>
-          <a class="foot__htmlacademy-logo" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="40" height="40"></a>
+          <a class="foot__htmlacademy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="foot__htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="40" height="40" alt="Лого академии"></a>
         </div>
       </div>
     </footer>

@@ -43,31 +43,16 @@
   z-index: 1;
 }
 
-.address__map img {
+.address__map-img {
   position: absolute;
   top: -38px;
   left: 0;
 }
 
-.address__mark {
+.address__mark-img {
   position: absolute;
-  top: 177px;
-  left: 128px;
-
-  width: 46px;
-  height: 52px;
-}
-
-.address__map-tablet {
-  display: none;
-}
-
-.address__map-desktop {
-  display: none;
-}
-
-.address__mark-big {
-  display: none;
+  top: 140px;
+  left: 125px;
 }
 
 @media (min-width: 768px) {
@@ -93,34 +78,21 @@
     margin-top: 20px;
   }
 
-  .address__map-mobile {
-    display: none;
-  }
-
-  .address__map-tablet {
-    display: block;
-  }
-
   .address__map {
     width: 768px;
     height: 396px;
   }
 
-  .address__map img {
-    top: -3px;
+  .address__map-img {
+    width: 768px;
   }
 
-  .address__mark {
-    top: 150px;
-    left: 322px;
-  }
+  .address__mark-img {
+    top: 110px;
+    left: 330px;
 
-  .address__mark-small {
-    display: none;
-  }
-
-  .address__mark-big {
-    display: block;
+    width: 124px;
+    height: 106px;
   }
 }
 
@@ -146,16 +118,12 @@
     width: 1440px;
   }
 
-  .address__map-tablet {
-    display: none;
+  .address__map-img {
+    width: 1440px;
   }
 
-  .address__map-desktop {
-    display: block;
-  }
-
-  .address__mark {
-    top: 150px;
+  .address__mark-img {
+    top: 110px;
     left: 1000px;
   }
 }

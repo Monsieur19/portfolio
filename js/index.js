@@ -1,0 +1,1 @@
+var index=0,amountCustomer=document.querySelectorAll(".ourCustomers__item").length-4;function setMargin(e){document.querySelector(".ourCustomers__item:first-child").style.marginLeft=-240*e+"px"}function minus(){(index-=1)<0&&(index=amountCustomer),setMargin(index)}function plus(){amountCustomer<(index+=1)&&(index=0),setMargin(index)}
